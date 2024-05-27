@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+    <title>littleboy97学习笔记</title><meta charset="utf-8">
+    
+<link rel="stylesheet" href="/SOLIDWORKS_Solution.github.io/css/main.css">
+<!-- 引入配置文件 -->
+    
+<link rel="stylesheet" href="/SOLIDWORKS_Solution.github.io/lib/font-awesome/css/font-awesome.min.css">
+<!-- 字体图片库 -->
+    
+<link rel="stylesheet" href="/SOLIDWORKS_Solution.github.io/lib/highlight/styles/atom-one-dark.css">
+<!-- 代码高亮库 -->
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <div id="main">
+        <aside id="aside"><!-- 搜索栏 -->
+<div id="search"><input class="search-input" type="text" placeholder="search"><icon id="search-icon" class="fa fa-bars" title="收起目录"></div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+
+</div><div id="toc"></div></aside><!-- 引入侧边栏-->
+        <nav><div>
+    <!-- 显示侧边栏 --><icon id="asideshow" class="fa fa-bars" title="显示侧边栏"></icon><ul id="menu">
+    <!-- 内部链接本页面直接跳转 -->
+    
+    <li class="menu-item"><a href="/index.html" class="menu-item-link">主页</a></li>
+    
+    <li class="menu-item"><a href="/search/index.html" class="menu-item-link">搜索</a></li>
+    
+    <li class="menu-item"><a href="/Project/index.html" class="menu-item-link">技能</a></li>
+    
+    <li class="menu-item"><a href="/工具网站/index.html" class="menu-item-link">网站</a></li>
+    
+    <!-- 外部链接打开新的窗口跳转 -->
+    
+    <li class="menu-item"><a href="https://space.bilibili.com/12254884?spm_id_from=333.1007.0.0" class="menu-item-link" target="_blank">Bilibili</a></li>
+    <li class="menu-item"><a href="https://github.com/wodemingzihenchang" class="menu-item-link" target="_blank">github</a></li>
+    <li class="menu-item"><a href="https://gitee.com/littleboy97" class="menu-item-link" target="_blank">gitee</a></li></ul>
+</div></nav><!-- 引入导航 -->
+        <div id="content"><div>
+    <span id="post-author">作者: littleboy</span>
+    <span id="post-date">2024-05-27 17:12:57</span>
+</div>
+
+<div id="article"><h1 id="协作服务器网络配置"><a href="#协作服务器网络配置" class="headerlink" title="协作服务器网络配置"></a>协作服务器网络配置</h1><p>在 SOLIDWORKS® Electrical Schematic 应用程序中，如何配置数据库名称和实例以使用 IP 地址来避免 DNS 服务器？</p>
+<p><strong>方法</strong></p>
+<p>要在 SOLIDWORKS® Electrical、SQL 服务器和 DNS 服务器之间的协作服务器之间进行通信时节省时间并避免不必要的网络通信，请执行以下步骤：</p>
+<p>1.在 SOLIDWORKS Electrical 中，转至“工具”&gt;“应用程序设置”&gt;“协作服务器”。<br>2.将 “地址”（服务器名称）替换为 IP 地址。请参见随附的图像“S-078403_Collaborative_server.jpg”。<br>3.单击“数据库”选项卡。<br>4.对于“服务器名称”，将 SQL Server 和实例的名称替换为服务器的 IP 地址和 SQL 使用的 TCP 端口号。使用逗号作为分隔符。例如，“127.0.0.1,1466”。请参见随附的图像“S-078403-Databases.jpg”。<br>5.单击“确定”并重新启动应用程序。</p>
+<p>要确定 SQL 使用的 TCP 端口，请执行以下步骤：</p>
+<p>1.打开 Windows® “计算机管理”应用程序。<br>2.展开“SQL Server 配置管理器”。<br>3.展开“SQL Server 网络配置”。<br>4.单击“[SQL 实例] 的协议”。<br>5.在详细信息窗格中，双击“TCP&#x2F;IP”。<br>6.在“IP 地址”选项卡上，向下滚动以查看“IPALL”组中的“TCP 端口”。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">BidXlsTemplate</span><br><span class="line">Block：符号</span><br><span class="line">BOMTemplate</span><br><span class="line">DatabaseTemplate</span><br><span class="line">DrawingStyle</span><br><span class="line">epdm_bom</span><br><span class="line">ErpDatabase</span><br><span class="line">Glossary</span><br><span class="line">Macros</span><br><span class="line">Palette：</span><br><span class="line">Plot Styles</span><br><span class="line">Projects</span><br><span class="line">ProjectTemplate：示例工程文件</span><br><span class="line">SOLIDWORKS：3D零件</span><br><span class="line">TEMP</span><br><span class="line">TitleBlock：图框</span><br><span class="line">XlsAutomation</span><br><span class="line">XmlConfig</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/SOLIDWORKS_Solution.github.io/%E5%8D%8F%E4%BD%9C%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/image-20240510183059677.png" alt="image-20240510183059677"></p>
+</div>
+ 		<!-- 引入正文 -->
+    </div>	
+    
+<script src="/SOLIDWORKS_Solution.github.io/lib/highlight/highlight.pack.js"></script>
+<!-- 引入代码高亮的 js -->
+    
+<script src="/SOLIDWORKS_Solution.github.io/lib/jquery-3.4.1.min.js"></script>
+	<!-- 引入 jquery -->
+    
+<script src="/SOLIDWORKS_Solution.github.io/lib/jquery.pjax.js"></script>
+		<!-- 引入 pjax -->
+    
+<script src="/SOLIDWORKS_Solution.github.io/js/main.js"></script>
+					<!-- 引入 js 文件 -->
+	<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; 
+	mermaid.initialize({ theme: 'forest'});
+	</script> <!-- 引入 mermaid 流程图 -->
+</body></html>
