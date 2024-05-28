@@ -2,13 +2,13 @@
 <html><head>
     <title>littleboy97学习笔记</title><meta charset="utf-8">
     
-<link rel="stylesheet" href="/SOLIDWORKS-Solution/css/main.css">
+<link rel="stylesheet" href="/SOLIDWORKS-Solution.github.io/css/main.css">
 <!-- 引入配置文件 -->
     
-<link rel="stylesheet" href="/SOLIDWORKS-Solution/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/SOLIDWORKS-Solution.github.io/lib/font-awesome/css/font-awesome.min.css">
 <!-- 字体图片库 -->
     
-<link rel="stylesheet" href="/SOLIDWORKS-Solution/lib/highlight/styles/atom-one-dark.css">
+<link rel="stylesheet" href="/SOLIDWORKS-Solution.github.io/lib/highlight/styles/atom-one-dark.css">
 <!-- 代码高亮库 -->
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
@@ -24,9 +24,9 @@
     <!-- 显示侧边栏 --><icon id="asideshow" class="fa fa-bars" title="显示侧边栏"></icon><ul id="menu">
     <!-- 内部链接本页面直接跳转 -->
     
-    <li class="menu-item"><a href="/SOLIDWORKS-Solution/index.html" class="menu-item-link">主页</a></li>
+    <li class="menu-item"><a href="/SOLIDWORKS-Solution.github.io/index.html" class="menu-item-link">主页</a></li>
     
-    <li class="menu-item"><a href="/SOLIDWORKS-Solution/search/index.html" class="menu-item-link">搜索</a></li>
+    <li class="menu-item"><a href="/SOLIDWORKS-Solution.github.io/search/index.html" class="menu-item-link">搜索</a></li>
     
     <li class="menu-item"><a href="/Project/index.html" class="menu-item-link">技能</a></li>
     
@@ -51,26 +51,26 @@
 <p>父算例必须满足一定的条件，以便产生子模型算例:</p>
 <p>●父算例必须是静应力或非线性静力分析算例，而且实体数量大于一，同时还不能是子模型算例本身。<br>●父算例不能是一个2D简化算例。<br>●组成子模型的所选实体不可以和未选实体之间具有无穿透的接触，这会导致切分边界上的接触压力。<br>●组成子模型的所选实体不可以和未选实体之间共享接头。<br>●子模型的切分边界不能切过由横梁-横梁或壳边线-壳边线接头定义的接合接触。<br>●子模型的边界必须充分远离应力集中区域。</p>
 <h1 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h1><p>装配体包含大量的连接和接头特征。在顶层装配体模型中对所有这些特征进行网格划分会得到非常大的网格，而且会用相当多的计算时间。使用子模型特征，分析图示连接部分的应力，然后判断将顶层平板连接到立架的支架是否会超过应力屈服标准。</p>
-<h1 id="子模型算例"><a href="#子模型算例" class="headerlink" title="子模型算例"></a>子模型算例</h1><p><img src="/SOLIDWORKS-Solution/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517170642791.png" alt="image-20240517170642791"></p>
+<h1 id="子模型算例"><a href="#子模型算例" class="headerlink" title="子模型算例"></a>子模型算例</h1><p><img src="/SOLIDWORKS-Solution.github.io/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517170642791.png" alt="image-20240517170642791"></p>
 <p>选中进入父算例下的子模型零件</p>
-<p><img src="/SOLIDWORKS-Solution/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517170755143.png" alt="image-20240517170755143"></p>
+<p><img src="/SOLIDWORKS-Solution.github.io/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517170755143.png" alt="image-20240517170755143"></p>
 <p>生成算例后，生成网格</p>
 <p>运行结果</p>
-<p><img src="/SOLIDWORKS-Solution/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517171254754.png" alt="image-20240517171254754"></p>
+<p><img src="/SOLIDWORKS-Solution.github.io/%E6%95%99%E7%A8%8B10-%E5%AD%90%E6%A8%A1%E5%9E%8B/image-20240517171254754.png" alt="image-20240517171254754"></p>
 </div>
  		<!-- 引入正文 -->
     </div>	
     
-<script src="/SOLIDWORKS-Solution/lib/highlight/highlight.pack.js"></script>
+<script src="/SOLIDWORKS-Solution.github.io/lib/highlight/highlight.pack.js"></script>
 <!-- 引入代码高亮的 js -->
     
-<script src="/SOLIDWORKS-Solution/lib/jquery-3.4.1.min.js"></script>
+<script src="/SOLIDWORKS-Solution.github.io/lib/jquery-3.4.1.min.js"></script>
 	<!-- 引入 jquery -->
     
-<script src="/SOLIDWORKS-Solution/lib/jquery.pjax.js"></script>
+<script src="/SOLIDWORKS-Solution.github.io/lib/jquery.pjax.js"></script>
 		<!-- 引入 pjax -->
     
-<script src="/SOLIDWORKS-Solution/js/main.js"></script>
+<script src="/SOLIDWORKS-Solution.github.io/js/main.js"></script>
 					<!-- 引入 js 文件 -->
 	<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; 
 	mermaid.initialize({ theme: 'forest'});
